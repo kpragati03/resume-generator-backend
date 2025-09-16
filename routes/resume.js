@@ -48,11 +48,19 @@ router.post('/', auth, async (req, res) => {
 
         const score = calculateScore(resumeData);
 
+        // ✅ FIXED: Explicitly map each field instead of spreading
         const newResume = new Resume({
-            ...resumeData,
+            name: resumeData.name,
+            email: resumeData.email,
+            phone: resumeData.phone,
+            address: resumeData.address,
+            profession: resumeData.profession,
+            education: resumeData.education,
+            experience: resumeData.experience,
+            skills: resumeData.skills,
             score,
-            selectedTemplate: selectedTemplate || 'classic', // ✅ ENSURE template is saved
-            color: color || '#007bff', // ✅ ENSURE color is saved
+            selectedTemplate: selectedTemplate || 'classic',
+            color: color || '#007bff',
             user: req.user.id,
         });
 
