@@ -24,10 +24,7 @@ mongoose.connect(process.env.MONGO_URI, {
 
 // Middleware
 app.use(cors({
-  origin: [
-    'https://resume-generator-frontend-5ext87v2x.vercel.app',
-    'http://localhost:3000'
-  ],
+  origin: true,
   credentials: true
 }));
 app.use(express.json());
