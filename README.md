@@ -1,6 +1,6 @@
 # 🛠️ Resume Generator - Backend API
 
-A robust Node.js backend API for the Resume Generator application, providing user authentication, resume management, and data persistence. Built with Express.js, MongoDB, and deployed on Railway.
+A robust Node.js backend API for the Resume Generator application, providing user authentication, resume management, and data persistence. Built with Express.js, MongoDB, and deployed on Render.
 
 ## ⚡ Features
 
@@ -30,7 +30,7 @@ A robust Node.js backend API for the Resume Generator application, providing use
 
 ## 🚀 Live API
 
-**Backend API:** [https://resume-generator-website.up.railway.app](https://resume-generator-website.up.railway.app)
+**Backend API:** [https://resume-generator-backend-o01z.onrender.com](https://resume-generator-backend-o01z.onrender.com)
 
 **Frontend Application:** [https://resume-generator-frontend-two.vercel.app](https://resume-generator-frontend-two.vercel.app)
 
@@ -46,7 +46,7 @@ A robust Node.js backend API for the Resume Generator application, providing use
 | **Validation** | express-validator |
 | **Environment** | dotenv |
 | **CORS** | cors |
-| **Deployment** | Railway |
+| **Deployment** | Render |
 
 ## 📁 Project Structure
 
@@ -387,7 +387,7 @@ app.use(cors(corsOptions));
 
 ## 🚀 Deployment (Railway)
 
-### Environment Variables on Railway
+### Environment Variables on Render
 ```env
 MONGODB_URI=your-mongodb-connection-string
 JWT_SECRET=your-jwt-secret-key
@@ -397,8 +397,8 @@ PORT=5000
 ```
 
 ### Deployment Steps
-1. **Connect GitHub Repository** to Railway
-2. **Set Environment Variables** in Railway dashboard
+1. **Connect GitHub Repository** to Render
+2. **Set Environment Variables** in R dashboard
 3. **Configure Build Settings**:
    - **Build Command**: `npm install`
    - **Start Command**: `npm start`
@@ -574,7 +574,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 - [Express.js](https://expressjs.com/) for the robust web framework
 - [MongoDB](https://www.mongodb.com/) for the flexible database solution
 - [Mongoose](https://mongoosejs.com/) for elegant MongoDB modeling
-- [Railway](https://railway.app/) for seamless deployment
+- [Render](https://render.app/) for seamless deployment
 - [JSON Web Tokens](https://jwt.io/) for secure authentication
 
 ---
@@ -588,6 +588,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 Made with ❤️ and Node.js by **Pragati Kumari**
 
-[🌐 API Documentation](https://resume-generator-website.up.railway.app) | [⚡ Frontend App](https://resume-generator-frontend-two.vercel.app)
+[🌐 API Documentation](https://resume-generator-backend-o01z.onrender.com) | [⚡ Frontend App](https://resume-generator-frontend-two.vercel.app)
 
 </div>
